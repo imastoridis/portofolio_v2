@@ -9,18 +9,21 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
-  <link rel="stylesheet" href="/assets/css/animate.css" />
+  <!-- Fonts -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" />
+
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="/assets/css/fontAwesome.css" />
   <link rel="stylesheet" href="/assets/css/app.css" />
   <link rel="stylesheet" href="/assets/css/mobile.css" />
   <link rel="stylesheet" href="/assets/css/common.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
 
-  <!--  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
- -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <!-- Emailjs config-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 
@@ -31,71 +34,79 @@
   </script>
 
   <script type="text/javascript">
-    /*   window.onload = function () {
-        document
-          .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            this.contact_number.value = (Math.random() * 100000) | 0;
-            emailjs.sendForm("service_0p7xnv7", "contact_form", this).then(
-              function () {
-                console.log("SUCCESS!");
-                $(".success_msg").append('<div id="msg_success"></div>');
-                $("#msg_success").append(
-                  '<p class="msg_success" >Mail envoyé avec succès!</p>'
-                );
-                setTimeout(function () {
-                  $("#msg_success").html("");
-                }, 4000);
-              },
-              function (error) {
-                console.log("FAILED...", error);
-                $(".error_msg").append('<div id="msg_success"></div>');
-                $("#msg_error").append(
-                  '<p class="msg_success" >Erreur suite a l envoi du mail!</p>'
-                );
-                setTimeout(function () {
-                  $("#msg_success").html("");
-                }, 4000);
-              }
-            );
-          });
-      }; */
+    /*     window.onload = function () {
+          document
+            .getElementById("contact-form")
+            .addEventListener("submit", function (event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = (Math.random() * 100000) | 0;
+              emailjs.sendForm("service_0p7xnv7", "contact_form", this).then(
+                function () {
+                  console.log("SUCCESS!");
+                  $(".success_msg").append('<div id="msg_success"></div>');
+                  $("#msg_success").append(
+                    '<p class="msg_success" >Mail envoyé avec succès!</p>'
+                  );
+                  setTimeout(function () {
+                    $("#msg_success").html("");
+                  }, 4000);
+                },
+                function (error) {
+                  console.log("FAILED...", error);
+                  $(".error_msg").append('<div id="msg_success"></div>');
+                  $("#msg_error").append(
+                    '<p class="msg_success" >Erreur suite a l envoi du mail!</p>'
+                  );
+                  setTimeout(function () {
+                    $("#msg_success").html("");
+                  }, 4000);
+                }
+              );
+            });
+        };  */
   </script>
+
 
   <base href="/homepage" />
 </head>
 
 <body ng-view>
   <div ng-app></div>
+
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- COMPONENTS -->
+  <script src="homepage/homepage.js"></script>
+  <script src="homepage/components/competence.component.js"></script>
+  <script src="homepage/components/about.component.js"></script>
+  <script src="homepage/components/parcours.component.js"></script>
+  <script src="homepage/components/project.component.js"></script>
+  <script src="homepage/components/formation.component.js"></script>
+  <script src="homepage/components/contact.component.js"></script>
+  <script src="homepage/components/nav.component.js"></script>
+  <script src="homepage/components/home.component.js"></script>
+  <script src="homepage/components/footer.component.js"></script>
+
+  <!-- Other JS -->
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+
+
+  <script>
+    // Cleans the URL upon page load
+    window.onload = function () {
+      if (window.location.hash) {
+        history.replaceState(null, null, window.location.pathname);
+      }
+    };</script>
 </body>
-
-<!--  In production use: -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-
-<!--  <script src="lib/angular/angular.js"></script>  -->
-<!-- <script src="lib/angular-route/angular-route.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
-<script src="app.js"></script>
-<script src="homepage/homepage.js"></script>
-<script src="core/version/version.js"></script>
-<script src="core/version/version-directive.js"></script>
-<script src="core/version/interpolate-filter.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- -->
-<script src="scripts/script.js"></script>
-
-<!-- <script id="__bs_script__">
-  //<![CDATA[
-  document.write(
-    "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace(
-      "HOST",
-      location.hostname
-    )
-  );
-  //]]>
-</script> -->
 
 </html>

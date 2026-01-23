@@ -1,7 +1,15 @@
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.strong {
+  font-weight: bold !important;
 }
