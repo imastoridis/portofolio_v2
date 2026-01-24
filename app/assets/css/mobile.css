@@ -93,7 +93,7 @@
   .skill-box i {
     font-size: 3em;
   }
-  #skills .space-between {
+  #skills .text-justify {
     font-size: 0.87em;
   }
   #skills .item.stars {
@@ -118,7 +118,7 @@
 }
 
 @media screen and (max-width: 895px) {
-  #contact .space-between .item {
+  #contact .text-justify .item {
     display: block;
     width: inherit;
     margin: 25px 0px;
@@ -209,7 +209,7 @@
 
   .budgetTracker-overlay {
     height: 420px;
-    justify-content: space-between;
+    justify-content: text-justify;
     gap: 15px;
   }
 
@@ -248,7 +248,7 @@
 }
 
 @media screen and (max-width: 376px) {
-  #skills .space-between {
+  #skills .text-justify {
     font-size: 0.8em;
   }
   .text_h4 {

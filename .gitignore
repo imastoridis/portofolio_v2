@@ -6,3 +6,5 @@ tmp
 .DS_Store
 .idea
 e2e-tests/
+env.js
+app/env.js

@@ -97,23 +97,16 @@ section.grey {
 
 /* FLEX */
 
-.space-between {
-  text-align: justify;
-}
-
-.space-between:after {
+.text-justify:after {
   content: "";
   display: inline-block;
   width: 100%;
 }
 
-.space-between .item {
+.text-justify .item {
   display: inline-block;
 }
 
-.text-center {
-  text-align: center;
-}
 /* CENTER */
 .center {
   display: table;
@@ -123,10 +116,6 @@ section.grey {
 .center .c-item {
   display: table-cell;
   vertical-align: middle;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 /* MENU */
@@ -246,10 +235,7 @@ nav li a {
 }
 
 .parallax {
-  /*background-image: url("../images/pexels-dominika-roseclay-1036808.jpg");
-background-image: url("../images/download.png");*/
   background-image: url("../images/yellow.jpg");
-  /* background-image: url("../images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");*/
   height: 100%;
   position: relative;
   background-attachment: fixed;
@@ -472,31 +458,31 @@ button#cv {
   width: 46%;
 }
 
-#skills .space-between {
+#skills .text-justify {
   margin-bottom: -13px;
 }
 
-#skills .space-between .item {
+#skills .text-justify .item {
   vertical-align: top;
 }
 
-#skills .space-between .item.names {
+#skills .text-justify .item.names {
   font-weight: 500;
 }
 
-#skills #front-end .space-between .item.stars {
+#skills #front-end .text-justify .item.stars {
   color: #9b59b6;
 }
 
-#skills #back-end .space-between .item.stars {
+#skills #back-end .text-justify .item.stars {
   color: #3498db;
 }
 
-#skills #cms .space-between .item.stars {
+#skills #cms .text-justify .item.stars {
   color: #e67e22;
 }
 
-#skills #web-design .space-between .item.stars {
+#skills #web-design .text-justify .item.stars {
   color: #2ecc71;
 }
 
@@ -709,7 +695,7 @@ button#cv {
 .project_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: text-justify;
   width: 80%;
   gap: 25px;
 }
@@ -762,7 +748,6 @@ button#cv {
   background-color: white;
   overflow: hidden;
   width: 100%;
-  /*  height: 100px; */
   height: 20%;
   transition: 0.5s ease;
   -webkit-transition: all 0.5s;
@@ -786,7 +771,6 @@ button#cv {
   font-weight: 600;
   text-transform: uppercase;
   color: white;
-  /* margin-top: 25px; */
 }
 
 #projects .tags li {
@@ -801,7 +785,6 @@ button#cv {
 
 #projects ul.desc {
   margin: 20px 30px;
-  /*  height: 170px; */
   height: 100%;
   font-size: 15px;
   line-height: 25px;
@@ -966,6 +949,14 @@ input[type="submit"]:hover {
   font-size: 1em;
 }
 
+.contact_btn {
+  background-color: #3fa8fd;
+}
+
+.status_message {
+  color: green;
+  margin-top: 15px;
+}
 /* end contact */
 
 /* FOOTER */
