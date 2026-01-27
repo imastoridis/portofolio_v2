@@ -68,7 +68,7 @@ button:hover {
 
 .section-title {
   text-align: center;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .outer-container {
@@ -84,7 +84,7 @@ button:hover {
 }
 
 section {
-  padding: 80px 0px 60px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 section.grey {
@@ -150,23 +150,18 @@ nav li a {
   text-decoration: none !important;
 }
 
-/* end menu */
-
-/* MOBILE MENU */
-
 #cross {
   height: 50px;
   width: 50px;
   background-color: white;
   color: white;
   background-image: url("../fontAwesome/x-solid-full.svg");
+  display: none;
 }
 
 #hamburger {
   height: 50px;
   width: 50px;
-  /*   background-color: aliceblue;
-  color: aquamarine; */
   background-image: url("../fontAwesome/bars-solid-full.svg");
 }
 
@@ -186,10 +181,6 @@ nav li a {
   margin: 15px 15px;
   text-align: center;
   z-index: 1;
-}
-
-#cross {
-  display: none;
 }
 
 #menu {
@@ -226,7 +217,7 @@ nav li a {
   text-decoration: none;
 }
 
-/* end mobile menu */
+/* end menu */
 
 /* HOMEPAGE */
 
@@ -318,6 +309,10 @@ header {
   margin-top: -15px;
 }
 
+.link_home {
+  text-decoration: none;
+  color: white;
+}
 /* end homepage */
 
 /* ABOUT */
@@ -761,7 +756,7 @@ button#cv {
 
 .overlay .text {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
   height: 100%;
 }
 
@@ -824,6 +819,10 @@ button#cv {
   text-align: center;
   gap: 5px;
   height: 60px;
+}
+
+.font_size_kpi {
+  font-size: 0.9em;
 }
 /* end projects */
 

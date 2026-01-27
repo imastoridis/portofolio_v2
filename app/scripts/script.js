@@ -1,30 +1,9 @@
-/* var json = {
-    "fadeInLeft": [
-        $('#front-end'),
-        $('#cms'),
-        $('#environnement')
-    ],
-    "fadeInRight": [
-        $('#back-end'),
-        $('#web-design')
-    ],
-    "fadeInUp": [
-        $('#one'),
-        $('#two'),
-        $('#three'),
-        $('#four'),
-        $('#five'),
-        $('#six')
-    ]
-}; */
-
 //Animation on scroll
 $(window).on('scroll', function () {
     var fadeSkills = $(".fadeSkills").offset().top
     var fadeExperience = $(".fadeExperience").offset().top
-    // console.log(fadeExperience)
     var y_scroll = window.pageYOffset;
-    //console.log(y_scroll)
+
     var scroll_competences = fadeSkills / 1.6;
     var scroll_experience = fadeExperience / 1.16;
 
@@ -47,6 +26,7 @@ $(window).on('scroll', function () {
     }
 
     if (y_scroll > scroll_experience) {
+
         $(".six").addClass('fadeInUp animated')
         $(".six").removeClass("hidden");
 

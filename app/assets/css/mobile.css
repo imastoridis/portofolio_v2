@@ -245,6 +245,14 @@
   header {
     font-size: 1.2em;
   }
+
+  .font_size_workbench {
+    font-size: 0.9em;
+  }
+
+  .font_size_kpi {
+    font-size: 0.7em;
+  }
 }
 
 @media screen and (max-width: 376px) {
