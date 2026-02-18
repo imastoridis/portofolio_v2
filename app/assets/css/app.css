@@ -699,6 +699,10 @@ button#cv {
   background-image: url("../images/budgetTracker.jpg");
 }
 
+#stationTracker .image-box {
+  background-image: url("../images/stationTracker.jpg");
+}
+
 #self_driving_car .image-box {
   background-image: url("../images/self_driving_car.JPG");
 }
